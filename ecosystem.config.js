@@ -1,7 +1,7 @@
 module.exports = {
   apps: [{
     name: "student-management",
-    script: "./student-managment/server.js",
+    script: "./server.js",
     env: {
       NODE_ENV: "development",
       PORT: 3000

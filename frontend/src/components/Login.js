@@ -13,7 +13,7 @@ import {
     Alert,
     CircularProgress
 } from '@mui/material';
-import axios from '../utils/axios';
+import api from '../utils/api';
 import { useNavigate } from 'react-router-dom';
 
 const Login = () => {
@@ -46,7 +46,7 @@ const Login = () => {
 
             console.log('Attempting login with:', { endpoint, email: formData.email });
 
-            const response = await axios.post(endpoint, {
+            const response = await api.post(endpoint, {
                 email: formData.email,
                 password: formData.password
             });

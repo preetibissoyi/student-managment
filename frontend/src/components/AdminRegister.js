@@ -44,7 +44,7 @@ const AdminRegister = () => {
 
         try {
             const response = await axios.post(
-                `${process.env.REACT_APP_API_URL}/admin/register`,
+                `${process.env.REACT_APP_API_URL}/api/admin/register`,
                 {
                     name: formData.name,
                     email: formData.email,

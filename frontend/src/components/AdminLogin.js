@@ -49,7 +49,7 @@ const AdminLogin = () => {
         try {
             console.log('Attempting login with:', formData.email);
             const response = await axios.post(
-                `${process.env.REACT_APP_API_URL}/admin/login`,
+                `${process.env.REACT_APP_API_URL}/api/admin/login`,
                 formData
             );
             console.log('Login response:', response.data);
